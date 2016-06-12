@@ -21,7 +21,7 @@
         <p><i class="fa fa-facebook"></i> Facebook</p>
         <p><i class="fa fa-youtube"></i> Youtube</p>
         <p><i class="fa fa-envelope"></i> info@asfru.com</p>
-        <p><i class="fa fa-code"></i>  By <a href="http://cainhall.me">Cain Hall</a></p>
+        <p><i class="fa fa-code"></i>  By <a href="http://cainhall.me">CainHall.me</a></p>
 
         
       </div>

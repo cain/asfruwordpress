@@ -11,38 +11,27 @@
 
 </style>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-	<?php twentysixteen_post_thumbnail(); ?>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+		<!-- put your content here -->
+    <img src="<?php bloginfo('template_directory'); ?>/images/logo-s.png" style="; " width="250" class="img-responsive center-block">
+<div class="page-container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		wp_link_pages( array(
-			'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
-			'after'       => '</div>',
-			'link_before' => '<span>',
-			'link_after'  => '</span>',
-			'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
-			'separator'   => '<span class="screen-reader-text">, </span>',
-		) );
-		?>
-	</div><!-- .entry-content -->
+        <div class="container  vertical-center-page " style="">
+        
+            <div class="row " style="">
+            
+                <div class="col-lg-12">
+                    
+                    <h1 class="page-header text-center"><?php the_title(); ?></h1>
+                    <p class="page-text text-center"><?php the_content(); ?><br/></p>
+                    
+                    
+                    
+                </div>
+                
+            </div>
 
-	<?php
-		edit_post_link(
-			sprintf(
-				/* translators: %s: Name of current post */
-				__( 'Edit<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
-				get_the_title()
-			),
-			'<div class="entry-footer"><button class="btn btn-primary ">',
-			'</button></div><!-- .entry-footer -->'
-		);
-	?>
+        </div>
+ </div>
 
-</article><!-- #post-## -->

@@ -55,31 +55,22 @@
 
 	<main class="cd-main-content">
 	    	<nav id="cd-lateral-nav">
-
-
+	    	<br>
+	    		<img src="<?php bloginfo('template_directory'); ?>/images/logo.png" width="150" style="" class="img-responsive center-block hidden-md-down">
 
 
 		<ul class="cd-navigation cd-single-item-wrapper">
-            <li><a href="#0">Home</a></li>
-			<li><a class="current" href="#0">Roster</a></li>
-			<li><a href="#0">Forums</a></li>
-			<li><a href="#0">Gallery</a></li>
-			<li><a href="#0">Operations</a></li>
-			<li><a href="#0">Donate</a></li>
+		<li><a href="<?php echo home_url(); ?>">Home</a></li>
+		<?php wp_list_pages( 'sort_column=menu_order&title_li=' ); ?>
 		</ul> <!-- cd-single-item-wrapper -->
-        
-        		<ul class="cd-navigation cd-single-item-wrapper">
-            <li><a href="#0">Apply Here</a></li>
 
-		</ul> <!-- cd-single-item-wrapper -->
 
 
         
         <div>
 
-                    <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" width="150" style="" class="img-responsive center-block hidden-md-down">
-            <br>
-            <br>
+                    
+
         <img src="<?php bloginfo('template_directory'); ?>/images/StrayaGaming.png" width="260" class="img-responsive center-block">
             
 
@@ -87,7 +78,7 @@
         </div>
 
 	</nav>
-	
+
 
 	<style>
 body {
