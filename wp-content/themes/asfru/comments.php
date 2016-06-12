@@ -20,7 +20,17 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+
+<div class="page-container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+        <div class="container  vertical-center-page " style="">
+        
+            <div class="row " style="">
+            
+                <div class="col-lg-8">
+                    
+
+                    <div id="comments" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
@@ -77,3 +87,15 @@ if ( post_password_required() ) {
 	?>
 
 </div><!-- .comments-area -->
+                    
+                </div>
+                <div class="col-lg-4">
+                	<?php get_sidebar(); ?>
+
+                </div>
+
+                
+            </div>
+
+        </div>
+ </div> <!-- END OF PAGE CONTAINER-->

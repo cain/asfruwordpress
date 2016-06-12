@@ -3625,9 +3625,9 @@ p > video {
 
 	.sidebar {
 		float: left;
-		margin-left: 75%;
+
 		padding: 0;
-		width: 25%;
+		width: 100%;
 	}
 
 	.widget {
