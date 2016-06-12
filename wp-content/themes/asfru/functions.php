@@ -271,7 +271,7 @@ function twentysixteen_scripts() {
 	wp_script_add_data( 'twentysixteen-html5', 'conditional', 'lt IE 9' );
 
 	wp_enqueue_script( 'twentysixteen-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20160412', true );
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js');
+	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -287,6 +287,8 @@ function twentysixteen_scripts() {
 		'expand'   => __( 'expand child menu', 'twentysixteen' ),
 		'collapse' => __( 'collapse child menu', 'twentysixteen' ),
 	) );
+
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js');
 }
 add_action( 'wp_enqueue_scripts', 'twentysixteen_scripts' );
 

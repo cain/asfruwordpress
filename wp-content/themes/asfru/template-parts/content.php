@@ -30,13 +30,13 @@
         <!-- blog item -->
         <div class="row blog-row">
 
-                <div class="col-lg-8" style="">
+                <div class="col-lg-12" style="">
                     
                     <h1 class="blog-header"><?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?></h1>
                     
-                    <p style="font-style:italic;">24/05/2016 by Cain Hall</p>
+
                     
-                    <p class="blog-text">
+                   
                         
 		<?php
 			/* translators: %s: Name of current post */
@@ -67,15 +67,15 @@
 				'</span>'
 			);
 		?>
-                        </p>
+                        
                     
                     <br>
                     
-                    <button class="btn btn-primary">View The Forums</button>
+                    
                     
                 </div>
 
-                <div class="col-lg-4"><img src="images/background.jpg" width="100%" class="pull-right"></div>
+               
 
         </div>
         <!-- blog item -->

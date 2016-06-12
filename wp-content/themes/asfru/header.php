@@ -27,6 +27,9 @@
 </head>
 
 <body >
+
+
+
 	<header>
 		<a id="cd-logo" href="#0" style="display:inline-block;"></a>
 		<nav id="cd-top-nav">
@@ -49,6 +52,50 @@
 		</nav>
 		<a id="cd-menu-trigger" href="#0"><span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span></a>
 	</header>
-    
 
 	<main class="cd-main-content">
+	    	<nav id="cd-lateral-nav">
+
+
+
+
+		<ul class="cd-navigation cd-single-item-wrapper">
+            <li><a href="#0">Home</a></li>
+			<li><a class="current" href="#0">Roster</a></li>
+			<li><a href="#0">Forums</a></li>
+			<li><a href="#0">Gallery</a></li>
+			<li><a href="#0">Operations</a></li>
+			<li><a href="#0">Donate</a></li>
+		</ul> <!-- cd-single-item-wrapper -->
+        
+        		<ul class="cd-navigation cd-single-item-wrapper">
+            <li><a href="#0">Apply Here</a></li>
+
+		</ul> <!-- cd-single-item-wrapper -->
+
+
+        
+        <div>
+
+                    <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" width="150" style="" class="img-responsive center-block hidden-md-down">
+            <br>
+            <br>
+        <img src="<?php bloginfo('template_directory'); ?>/images/StrayaGaming.png" width="260" class="img-responsive center-block">
+            
+
+        
+        </div>
+
+	</nav>
+	
+
+	<style>
+body {
+        background-image:    url(<?php bloginfo('template_directory'); ?>/images/background.jpg);
+                     /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;    
+    background-size: cover;/* optional, center the image */
+    background-color: #171717;}
+</style>
+
