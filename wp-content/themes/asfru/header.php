@@ -63,6 +63,11 @@
 		<li><a href="<?php echo home_url(); ?>">Home</a></li>
 		<?php wp_list_pages( 'sort_column=menu_order&title_li=' ); ?>
 		</ul> <!-- cd-single-item-wrapper -->
+		<div class="hr"></div>
+		<ul class="cd-navigation cd-single-item-wrapper">
+		<li><a href="<?php echo home_url(); ?>/login">Login</a></li>
+		
+		</ul> <!-- cd-single-item-wrapper -->
 
 
 

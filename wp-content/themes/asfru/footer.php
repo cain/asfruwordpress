@@ -26,7 +26,7 @@
         
       </div>
       <div class="col-md-2 col-sm-6 paddingtop-bottom footer-class">
-        <h6 class="heading7">LINKS</h6>
+        <h6 class="heading7">PAGES</h6>
 <?php wp_list_pages( 'sort_column=menu_order&title_li=' ); ?>
       </div>
       <div class="col-md-3 col-sm-6 paddingtop-bottom footer-class" >

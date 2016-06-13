@@ -9,16 +9,22 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentysixteen' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+<div class="page-container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php
+        <div class="container  vertical-center-page " style="">
+        
+            <div class="row " style="">
+            
+                <div class="col-lg-8">
+                		<?php if ( have_posts() ) : ?>
+
+			<div class="page-header">
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentysixteen' ), '<span>' . esc_html( get_search_query() ) . '</span>' ); ?></h1><br>
+			</div><!-- .page-header -->
+                    
+						<?php
 			// Start the loop.
 			while ( have_posts() ) : the_post();
 
@@ -31,8 +37,7 @@ get_header(); ?>
 
 			// End the loop.
 			endwhile;
-
-			// Previous/next page navigation.
+						// Previous/next page navigation.
 			the_posts_pagination( array(
 				'prev_text'          => __( 'Previous page', 'twentysixteen' ),
 				'next_text'          => __( 'Next page', 'twentysixteen' ),
@@ -45,9 +50,17 @@ get_header(); ?>
 
 		endif;
 		?>
+                    
+                </div>
+                <div class="col-lg-4">
+                	<?php get_sidebar(); ?>
 
-		</main><!-- .site-main -->
-	</section><!-- .content-area -->
+                </div>
 
-<?php get_sidebar(); ?>
+                
+            </div>
+
+        </div>
+ </div> <!-- END OF PAGE CONTAINER-->
+
 <?php get_footer(); ?>

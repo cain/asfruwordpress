@@ -52,7 +52,7 @@ get_header(); ?>
             </div>
 
         </div>
- <div class="container blog hidden-xs-down" >
+ <div class="container blog " >
         
 
                     

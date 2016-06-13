@@ -8,18 +8,18 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+<div style="border: solid 1px #232323; margin-bottom:20px; padding: 20px 10px" class="col-lg-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-	</header><!-- .entry-header -->
-
+	</div><!-- .entry-header -->
+<hr>
 	<?php twentysixteen_post_thumbnail(); ?>
 
 	<?php twentysixteen_excerpt(); ?>
 
 	<?php if ( 'post' === get_post_type() ) : ?>
 
-		<footer class="entry-footer">
+		<div class="entry-footer">
 			<?php twentysixteen_entry_meta(); ?>
 			<?php
 				edit_post_link(
@@ -32,7 +32,7 @@
 					'</span>'
 				);
 			?>
-		</footer><!-- .entry-footer -->
+		</div><!-- .entry-footer -->
 
 	<?php else : ?>
 
@@ -49,5 +49,4 @@
 		?>
 
 	<?php endif; ?>
-</article><!-- #post-## -->
-
+</div>
