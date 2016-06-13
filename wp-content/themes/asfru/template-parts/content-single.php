@@ -10,7 +10,7 @@
 
 		<!-- put your content here -->
     <img src="<?php bloginfo('template_directory'); ?>/images/logo-s.png" style="; " width="250" class="img-responsive center-block">
-<div class="page-container" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="page-container-top" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
         <div class="container  vertical-center-page " style="">
         

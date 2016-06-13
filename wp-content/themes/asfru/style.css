@@ -339,7 +339,7 @@ header.is-fixed {
   display: block;
   line-height: 2em;
   padding: 0 16px 0 32px;
-  color: #aab5b7;
+
 }
 #cd-lateral-nav a.current {
   background-color: #c4bc97;
@@ -472,8 +472,8 @@ header.is-fixed {
 .vertical-center-page {
 
 margin-top:90px;
-    background-color:rgba(0,0,0,0.8);
-    padding:60px 60px;;
+    background-color:rgb(16, 16, 16);
+    padding:35px 30px;
 
 }
 .color-white {
@@ -485,8 +485,8 @@ margin-top:90px;
 }
 
 .blog {
-    height:; background-color: #0d0d0d;
-    padding: 40px 60px 12px;
+    background-color: rgba(19, 19, 19, 0.88);
+    padding: 30px 40px 0px;
     margin-top:100px;
     color:white;
    
@@ -508,8 +508,8 @@ margin-top:90px;
 
 .blog-row {
 
-    background-color: rgba(142, 142, 142, 0.1);
-    padding:20px 7px;
+       background-color: rgb(29, 29, 29);
+    padding: 20px 7px;
 
         margin-bottom: 30px
 }
@@ -530,6 +530,10 @@ footer { background-color:#0f0f0f; min-height:350px; font-family: 'Open Sans', s
 .footer-ul li a:hover {transition: color 0.2s linear 0s, background 0.2s linear 0s; color:#0275d8; }
 
  
+ .footer-class li {
+
+  list-style: none;
+ }
  
 
  
@@ -551,8 +555,15 @@ footer { background-color:#0f0f0f; min-height:350px; font-family: 'Open Sans', s
 .page-container {
     background-color:rgba(23,23,23,0.98);
     padding-top:20px;
+     padding-bottom:0px;
+   
+}
+
+.page-container-top {
+      background-color:rgba(23,23,23,0.98);
     margin-top:-100px;
-    padding-bottom:80px;
+    padding-top:20px;
+     padding-bottom:0px;
 }
 
 .text-center {
@@ -1062,24 +1073,24 @@ td {
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 }
 
 :-moz-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 }
 
 ::-moz-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	opacity: 1;
 	/* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 }
 
 
@@ -1107,7 +1118,7 @@ input[type="submit"][disabled]:focus {
 	border: 0;
 	border-radius: 2px;
 	color: #fff;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-weight: 700;
 	letter-spacing: 0.046875em;
 	line-height: 1;
@@ -1161,7 +1172,6 @@ input[type="number"]:focus,
 textarea:focus {
 	background-color: #fff;
 	border-color: #007acc;
-	color: white;;
 	outline: 0;
 }
 
@@ -1172,7 +1182,7 @@ textarea:focus {
 .post-password-form label {
 	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	letter-spacing: 0.076923077em;
@@ -1229,7 +1239,7 @@ input[type="search"].search-field {
  */
 
 a {
-	color: #007acc;
+	color: #bfbc93;
 	text-decoration: none;
 }
 
@@ -1245,6 +1255,7 @@ a:focus {
 
 a:hover,
 a:active {
+  color: white;
 	outline: 0;
 }
 
@@ -1296,7 +1307,7 @@ a:active {
 }
 
 .main-navigation {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 }
 
 .site-footer .main-navigation {
@@ -1550,7 +1561,7 @@ a:active {
 	border-top: 4px solid #1a1a1a;
 	border-bottom: 4px solid #1a1a1a;
 	clear: both;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	margin: 0 7.6923% 3.5em;
 }
 
@@ -1576,7 +1587,7 @@ a:active {
 
 .post-navigation .post-title {
 	display: inline;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 23px;
 	font-size: 1.4375rem;
 	font-weight: 700;
@@ -1595,7 +1606,7 @@ a:active {
 
 .pagination {
 	border-top: 4px solid #1a1a1a;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 19px;
 	font-size: 1.1875rem;
 	margin: 0 7.6923% 2.947368421em;
@@ -1734,7 +1745,7 @@ a:active {
 	border-top: 1px solid #d1d1d1;
 	border-bottom: 1px solid #d1d1d1;
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
@@ -1790,7 +1801,7 @@ a:active {
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);
 	color: #21759b;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 14px;
 	font-weight: 700;
 	left: -9999em;
@@ -1910,7 +1921,7 @@ blockquote:after,
 }
 
 .widget .widget-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 16px;
 	font-size: 1rem;
 	letter-spacing: 0.046875em;
@@ -1961,7 +1972,7 @@ blockquote:after,
 .widget_recent_entries .post-date {
 	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.615384615;
@@ -1981,7 +1992,7 @@ blockquote:after,
 .widget_rss cite {
 	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	font-style: normal;
@@ -2002,7 +2013,7 @@ blockquote:after,
 	border: 1px solid #d1d1d1;
 	border-radius: 2px;
 	display: inline-block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	line-height: 1;
 	margin: 0 0.1875em 0.4375em 0;
 	padding: 0.5625em 0.4375em 0.5em;
@@ -2085,7 +2096,7 @@ blockquote:after,
 }
 
 .site-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 23px;
 	font-size: 1.4375rem;
 	font-weight: 700;
@@ -2186,7 +2197,7 @@ blockquote:after,
 }
 
 .entry-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 28px;
 	font-size: 1.75rem;
 	font-weight: 700;
@@ -2471,7 +2482,7 @@ body:not(.search-results) .entry-summary > :last-child,
 
 .entry-footer {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
@@ -2507,7 +2518,7 @@ body:not(.search-results) .entry-summary > :last-child,
 .sticky-post {
 	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	letter-spacing: 0.076923077em;
@@ -2547,7 +2558,7 @@ body.search-no-results .page-header {
 }
 
 .page-title {
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 23px;
 	font-size: 1.4375rem;
 	line-height: 1.2173913043;
@@ -2570,7 +2581,7 @@ body.search-no-results .page-header {
 
 .page-links {
 	clear: both;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	margin: 0 0 1.75em;
 }
 
@@ -2677,7 +2688,7 @@ body.search-no-results .page-header {
 .comments-title,
 .comment-reply-title {
 	border-top: 4px solid #1a1a1a;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 23px;
 	font-size: 1.4375rem;
 	font-weight: 700;
@@ -2697,7 +2708,7 @@ body.search-no-results .page-header {
 .comment-list article,
 .comment-list .pingback,
 .comment-list .trackback {
-	border-top: 1px solid #d1d1d1;
+	border-top: 1px solid #1f1f1f;
 	padding: 1.75em 0;
 }
 
@@ -2733,7 +2744,7 @@ body.search-no-results .page-header {
 .comment-metadata,
 .pingback .edit-link {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1.6153846154;
@@ -2741,6 +2752,11 @@ body.search-no-results .page-header {
 
 .comment-metadata {
 	margin-bottom: 2.1538461538em;
+
+}
+
+.comment-meta {
+  min-height: 0px;
 }
 
 .comment-metadata a,
@@ -2781,9 +2797,9 @@ body.search-no-results .page-header {
 .comment-reply-link {
 	border: 1px solid #d1d1d1;
 	border-radius: 2px;
-	color: #007acc;
+
 	display: inline-block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	line-height: 1;
@@ -2794,7 +2810,7 @@ body.search-no-results .page-header {
 .comment-reply-link:hover,
 .comment-reply-link:focus {
 	border-color: currentColor;
-	color: #007acc;
+	color: #fff;
 	outline: 0;
 }
 
@@ -2805,7 +2821,7 @@ body.search-no-results .page-header {
 .comment-form label {
 	color: #686868;
 	display: block;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	letter-spacing: 0.076923077em;
@@ -2831,7 +2847,7 @@ body.search-no-results .page-header {
 
 .no-comments {
 	border-top: 1px solid #d1d1d1;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-weight: 700;
 	margin: 0;
 	padding-top: 1.75em;
@@ -3141,7 +3157,7 @@ p > video {
 .widecolumn label,
 .widecolumn .mu_register label {
 	color: #686868;
-	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	
 	font-size: 13px;
 	font-size: 0.8125rem;
 	font-weight: 400;
